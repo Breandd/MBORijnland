@@ -2,10 +2,7 @@
 
 {% block body %}
     {% for item in products %}
-        {{ item[2].name }}
-        &euro;{{ item[2].prijs }}
-        {{ item[2].description }}
-        Aantal {{ item[1] }}
+        {{ products }}
         <br>
     {% endfor %}
 {% endblock %}
