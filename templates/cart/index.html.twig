@@ -4,26 +4,49 @@
 
 {% block body %}
 <div class="example-wrapper">
-        <h1>Winkelwagen</h1>
+    <h1>Winkelwagen</h1>
+
+    <table width="100%">
+        <tr>
+            <th>Naam:</th>
+            <th>Aantal:</th>
+            <th>Prijs:</th>
+        </tr>
     {% for product in Products %}
-            <table>
-                <tr>
-                    <td>Naam</td>
-                    <td>Aantal</td>
-                    <td>Prijs</td>
-                </tr>
                 <tr>
                     <td>
                         {{ product.Product.Name }}
                     </td>
-                    <td>
+                    <td class="aantal">
                         {{ product.Aantal }}
                     </td>
-                    <td>
+                    <td class="prijs">
                         {{ product.Product.Prijs }}
                     </td>
                 </tr>
-            </table>
+
     {% endfor %}
+
+        <tr>
+            <th>Totaal: &euro; <span id="totaalprijs"></span></th>
+            <td></td>
+            <td><a class="btn btn-outline-secondary" href="{{ path('check_out') }}">Check-out</a></td>
+        </tr>
+    </table>
+
+    <script>
+        let prijzen = document.getElementsByClassName("prijs");
+        let aantallen = document.getElementsByClassName("aantal");
+        let totaal = 0;
+
+        for(let x = 0; x < prijzen.length; x++){
+            const prijs = parseFloat(prijzen[x].innerText);
+            const aantal = parseInt(aantallen[x].innerText);
+
+            totaal += prijs * aantal;
+        }
+
+        document.getElementById("totaalprijs").innerHTML = totaal.toFixed(2);
+    </script>
 </div>
 {% endblock %}

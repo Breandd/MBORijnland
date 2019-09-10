@@ -20,7 +20,7 @@ class CartController extends AbstractController
      */
     public function index(ProductRepository $productRepository)
     {
-        $cart = $this->session->get("Cart");
+        $cart = $this->session->get("Cart", array());
         $Products = array();
 
         foreach ($cart as $id => $product) {
