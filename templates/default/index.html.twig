@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Homepage - Bob's Digitale Producten{% endblock %}
+
+{% block body %}
+
+    <div class="row mt-5">
+        <div class="col-6 mt-5">
+            <p class="mt-5">Welkom bij</p>
+            <h1 class="font-weight-bold">Bob's Digitale Producten</h1>
+            <a class="btn-primary btn text-white knopstyles" href="{{ path('product_index') }}">Bekijk onze producten</a>
+        </div>
+        <div class="col-6">
+            <img width="700" src="{{ asset('images/undraw_web_development_w2vv.svg') }}" alt="test" />
+        </div>
+    </div>
+
+{% endblock %}
