@@ -1,0 +1,106 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FormController!{% endblock %}
+
+{% block body %}
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
+        * {
+            font-family: 'Raleway';
+        }
+
+        body{
+            height: 100%;
+        }
+
+
+
+        .addtext {
+            margin-bottom: 11%;
+        }
+
+        .partext {
+            font-size: 18px;
+        }
+
+        .options a {
+            border-radius: 0;
+            font-size: 24px;
+            padding: 13px 122px;
+            border: 4px solid white;
+            margin: 10px 4px;
+        }
+
+        .options .nietzeggen{
+            border-radius: 0;
+            font-size: 24px;
+            padding: 13px 343px;
+            border: 4px solid white;
+            margin: 10px 10px;
+        }
+
+        .options a:hover{
+            cursor: pointer;
+            color: black !important;
+        }
+
+        .nextback {
+            margin-bottom: 11%;
+        }
+
+        .nextback a:hover {
+            color: black;
+            border: 4px solid #F8EF22;
+            background: #F8EF22;
+        }
+    </style>
+
+    <div class="container-fluid" style="height: 100%;">
+        <div class="row">
+            <div class="col-2 col-sm-12">
+                <div>
+                    <img src="{{asset('images/logo.png')}}" width="179px" alt="MBORijnland logo" class="logo d-block ml-auto mr-auto mt-4">
+                </div>
+
+                <div class="d-flex mt-auto">
+                    <img src="{{asset('images/dutchinnovationfactorylogo.png')}}" width="75px" alt="MBORijnland logo" class="logo d-block ml-auto mr-auto">
+                </div>
+
+                <div>
+                    <img src="{{asset('images/haagselogo.png')}}" width="117px" alt="MBORijnland logo" class="logo d-block ml-auto mr-auto">
+                </div>
+            </div>
+
+            <div class="col-lg-10 col-sm-12" style="background-color: #221E1F;">
+                <p class="text-white text-center mt-4 font-weight-bold partext addtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit mattis leo a condimentum.</p>
+
+                <div class="question">
+                    <h2 class="text-white text-center mt-4 font-weight-bold">1. Hoe vaak eet jij patat?</h2>
+                    <div class="options text-center text-white">
+                        <a class="btn btn-outline-light">Vaak</a>
+                        <a class="btn btn-outline-light">Soms</a>
+                        <a class="btn btn-outline-light">Nooit</a> <br/>
+                        <a class="btn btn-outline-light nietzeggen mt-5">Wil ik liever niet zeggen</a>
+                    </div>
+
+                    <div class="nextback options text-white text-center mt-4">
+                        <a class="btn btn-outline-light">Vorige vraag</a>
+                        <a class="btn btn-outline-light">Volgende vraag</a>
+                    </div>
+
+                    <div class="progressbar mb-5">
+                        <p class="text-center text-white partext">1 van de 10</p>
+
+                        <div class="progressback" style="height: 10px; background-color: #c4c4c4; width: 500px; margin-left: auto; margin-right: auto;">
+                            <div class="progressinner" style="height: 10px; width: 25px; background-color: #f8ef22;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
