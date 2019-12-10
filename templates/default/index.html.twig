@@ -3,123 +3,10 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
-<style>
-@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 
-* {
-    font-family: 'Karla', sans-serif !important;;
-}
+<link href="{{ asset('css/homestyles.css') }}" rel="stylesheet" />
 
-.masthead {
-  height: 100vh;
-  min-height: 500px;
-  background-image: url('{{asset('images/background.png')}}');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.header-title {
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 48px !important;
-    line-height: 61px !important;
-    letter-spacing: 0.1em !important;
-}
-.header-subtitle {
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 20px !important;
-    line-height: 23px !important;
-    align-items: center !important;
-    letter-spacing: 0.1em !important;
-}
-.nav-link, .navbar-brand {
-    font-style: normal !important;
-    font-weight: bold !important;
-    line-height: 23px !important;
-    font-size: 16px;
-    letter-spacing: 0.1em !important;
-    color: #fff !important;
-}
-#navbar-brand {
-    width: 200px;
-    transition: 0.5s;
-}
-
-/*** Responsive Styles Standard Desktop +***/
-@media all and (min-width: 1100px) {
-    .container {
-        max-width: 1366px;
-  }
-}
-@media all and (max-width: 768px) {
-  .h-100 {
-    height: 100%!important;
-    padding: 15% 5%;
-  }
-  .home-title {
-    font-size: 28px !important;
-  }
-  div#navbarResponsive {
-    background-color: #fff;
-    border-top: 6px solid #000;
-  }
-  div#navbarResponsive ul li a {
-    color: #000 !important;
-    padding: 5%;
-    text-transform: uppercase;
-  }
-  div#navbarResponsive ul li a:hover {
-    background-color: #f2f2f2;
-  }
-}
-
-
-
-#navbar-container {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.btn-yellow {
-    text-transform: uppercase;
-    background-color: #D9C900;
-    padding: 10px 40px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.btn-yellow:hover {
-    color: #fff;
-}
-
-</style>
-<navigation  class="navbar navbar-expand-lg navbar-light fixed-top" id='navbar-container'>
-  <div class="container">
-    <a class="navbar-brand" href="#"><img id='navbar-brand' src="{{asset('images/69hY88r.png')}}"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Over MKB</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Meld je aan!</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</navigation>
+{% include 'components/header.html.twig' %}
 
 <!-- Full Page Image Header with Vertically Centered Content -->
 <header class="masthead text-white">
@@ -129,7 +16,8 @@
             <div class="col-md-5">
                 <h1 class="home-title ont-weight-light header-title">MKB Werkplaats</h1>
                 <p class="lead">Hoe future proof is uw onderneming? Onze studenten zien de digitale kansen, uitdagingen en mogelijkheden voor uw bedrijf waar u (nog) geen weet van hebt. We gaan graag samen met u aan de slag! Bereik meer klanten, werk efficiënter, maak meer winst. Heeft u een concrete vraag of wilt u samen kijken wat er mogelijk is. Meldt u aan!</p>
-            </div>
+                <a href="#" class="btn rounded-pill headerbutton">Lees meer</a>
+              </div>
             <div class="col-md-7 text-right">
                 <iframe title="vimeo-player" src="https://player.vimeo.com/video/154955979" width="100%" height="450px" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -141,25 +29,39 @@
 
 <section class="py-5">
   <div class="container">
-    {# <h2 class="font-weight-light">Page Content</h2> #}
     <div class='row text-center'>
        <div class='col'>
             <div class='row'>
-                <div class='col-xl-2'></div>
-                <div class='col-xl-10'>test2</div>
+                <div class='col-xl-2'><img src="{{ asset('images/Vector.png') }}"></div>
+                <div class='col-xl-10 blurbtitle'>Lorem Ipsum is simply a dummy text
+                  <br/>
+                  <span class="blurbtext">
+                      Contrary to popular belief, Lorem Ipsum is not simply random text.
+                  </span>
+                </div>
             </div>
        </div>
         <div class='col'>
             <div class='row'>
-                <div class='col-xl-2'></div>
-                <div class='col-xl-10'>test2</div>
+                <div class='col-xl-2'><img src="{{ asset('images/Vector.png') }}"></div>
+                <div class='col-xl-10 blurbtitle'>Lorem Ipsum is simply a dummy text
+                  <br/>
+                  <span class="blurbtext">
+                      Contrary to popular belief, Lorem Ipsum is not simply random text.
+                  </span>
+                </div>
             </div>
        </div>
        <div class='col'>
-            <div class='row'>
-                <div class='col-xl-2'></div>
-                <div class='col-xl-10'>test2</div>
-            </div>
+          <div class='row'>
+              <div class='col-xl-2'><img src="{{ asset('images/Vector.png') }}"></div>
+              <div class='col-xl-10 blurbtitle'>Lorem Ipsum is simply a dummy text
+                <br/>
+                <span class="blurbtext">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                </span>
+              </div>
+          </div>
        </div>
   </div>
 </div>
@@ -176,7 +78,7 @@
             <div class="col-md-6">
             <h4 class="subheading">DE OPLOSSING VOOR JOUW ONDERNEMING</h4>
             <p class="text-muted">Door ICT-onderwijs, onderzoek, overheid  en bedrijven te verbinden in één gebouw ontstaat een broedplaats vol interactie en samenwerking. Zo creëren wij een innovatieve plek waar kennisdeling plaatsvindt, innovaties ontstaan en co-creaties geboren worden. Daarmee is de Dutch Innovation Factory een Playground voor digital Innovators geworden. Een warm welkom met onze vraag aan jou “hoe wordt jij een Playground voor digital Innovators.</p>
-            <a class='btn btn-yellow' href='#'>Lees Meer</a>
+            <a href="#" class="btn rounded-pill headerbutton">Lees meer</a>
             </div>
         </div>
     </div>

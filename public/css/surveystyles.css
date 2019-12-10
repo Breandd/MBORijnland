@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
+* {
+font-family: 'Raleway';
+}
+
+body{
+height: 100%;
+}
+
+.displayDesktop{
+display: flex;
+}
+
+.displayMobile{
+display: none;
+}
+
+.iconsMobile{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px 0px;
+}
+
+.addtext {
+margin-bottom: 11%;
+}
+
+.partext {
+font-size: 18px;
+}
+
+.options a {
+border-radius: 0;
+font-size: 24px;
+padding: 13px 122px;
+border: 4px solid white;
+margin: 10px 4px;
+}
+
+.options .nietzeggen{
+border-radius: 0;
+font-size: 24px;
+padding: 13px 343px;
+border: 4px solid white;
+margin: 10px 10px;
+}
+
+.options a:hover{
+cursor: pointer;
+color: black !important;
+}
+
+.nextback {
+margin-bottom: 11%;
+}
+
+.nextback a:hover {
+color: black;
+border: 4px solid #F8EF22;
+background: #F8EF22;
+}
+
+@media all and (max-width: 768px){
+.options a {
+border-radius: 0;
+font-size: 24px;
+padding: 13px 20px;
+border: 4px solid white;
+margin: 10px 4px;
+}
+
+.options .nietzeggen{
+border-radius: 0;
+font-size: 24px;
+padding: 13px 20px;
+border: 4px solid white;
+margin: 10px 10px;
+}
+
+.displayDesktop{
+display: none;
+}
+
+.displayMobile{
+display: flex;
+}
+
+@media all and (max-width: 425px){
+.iconsMobile{
+display: inline;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding: 50px 0px;
+}
+.iconsMobile>img{
+padding: 20px 0px;
+}
+}
+
+@media all and (min-width: 1024px){
+.iconsDesktop>img{
+width: 150px;
+}
+}
+}

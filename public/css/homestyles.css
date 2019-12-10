@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+* {
+    font-family: 'Karla' !important;;
+}
+
+.lead {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+.blurbtitle {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: left;
+    line-height: 23px;
+}
+
+.blurbtitle .blurbtext {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.headerbutton {
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color: #D9C900;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-title {
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 52px !important;
+    line-height: 61px !important;
+    letter-spacing: 0.1em !important;
+}
+.header-subtitle {
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    line-height: 23px !important;
+    align-items: center !important;
+    letter-spacing: 0.1em !important;
+}
+.nav-link, .navbar-brand {
+    font-style: normal !important;
+    font-weight: bold !important;
+    line-height: 23px !important;
+    font-size: 16px;
+    letter-spacing: 0.1em !important;
+    color: #fff !important;
+}
+#navbar-brand {
+    width: 200px;
+    transition: 0.5s;
+}
+
+/*** Responsive Styles Standard Desktop +***/
+@media all and (min-width: 1100px) {
+    .container {
+        max-width: 1366px;
+  }
+}
+@media all and (max-width: 768px) {
+  .h-100 {
+    height: 100%!important;
+    padding: 15% 5%;
+  }
+  .home-title {
+    font-size: 28px !important;
+  }
+  div#navbarResponsive {
+    background-color: #fff;
+    border-top: 6px solid #000;
+  }
+  div#navbarResponsive ul li a {
+    color: #000 !important;
+    padding: 5%;
+    text-transform: uppercase;
+  }
+  div#navbarResponsive ul li a:hover {
+    background-color: #f2f2f2;
+  }
+}
+
+
+
+#navbar-container {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.btn-yellow {
+    text-transform: uppercase;
+    background-color: #D9C900;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-yellow:hover {
+    color: #fff;
+}

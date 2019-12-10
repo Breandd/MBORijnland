@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80918321-d0de-49b9-845f-c94df831e8db" name="Default Changelist" comment="" />
+    <list default="true" id="80918321-d0de-49b9-845f-c94df831e8db" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env copy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Werkplaats-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Werkplaats-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/form/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/dev.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -177,11 +184,29 @@
       <option name="presentableId" value="Default" />
       <updated>1575383103703</updated>
       <workItem from="1575383105224" duration="6785000" />
+      <workItem from="1575883775256" duration="106000" />
+      <workItem from="1575884235108" duration="79000" />
+      <workItem from="1575884857305" duration="732000" />
+      <workItem from="1575964342496" duration="356000" />
+      <workItem from="1575968374722" duration="297000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="183" key="#Composer" timestamp="1575383142997">
