@@ -9,13 +9,13 @@ use App\Form\ContactType;
 class ContactController extends AbstractController
 {
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/", name="contact")
      */
     public function index()
     {
         $form = $this->createForm(ContactType::class);
 
-        return $this->render('contact/index.html.twig', [
+        return $this->render('default/index.html.twig', [
                 'our_form' => $form,
                 'our_form' => $form->createView(),
             ]);

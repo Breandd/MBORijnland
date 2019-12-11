@@ -69,6 +69,12 @@
             border: 4px solid #F8EF22;
             background: #F8EF22;
         }
+        
+        @media only screen and (min-width: 1024px) and (max-width: 1440px){
+            .iconsDesktop img:first-child{ 
+                width: 100% !important;
+            }
+        }
 
         @media all and (max-width: 768px){
             .options a {
@@ -110,12 +116,10 @@
 
             @media all and (min-width: 1024px){
                 .iconsDesktop>img{
-                    width: 150px;
+                    width: 150px !important;
                 }
             }
         }
-
-       
     </style>
 
 
@@ -161,11 +165,11 @@
 
 
         <div class="row displayDesktop">
-            <div class="col-12 col-lg-2">
+            <div class="col-12 col-lg-2" style="display: flex; justify-content: space-between; flex-direction: column; flex-wrap: wrap;">
                 <div class="iconsDesktop">
                     <img src="{{asset('images/logo.png')}}" alt="MBORijnland logo" class="logo d-block ml-auto mr-auto mt-4">
                 </div>
-                <div class="iconsDesktop">
+                <div class="iconsDesktop d-flex mb-4" style="justify-content: space-around">
                     <div class="d-flex mt-auto">
                         <img src="{{asset('images/dutchinnovationfactorylogo.png')}}" alt="MBORijnland logo" class="logo d-block ml-auto mr-auto">
                     </div>
@@ -179,17 +183,19 @@
                 <p class="text-white text-center mt-4 font-weight-bold partext addtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit mattis leo a condimentum.</p>
 
                 <div class="question">
-                    <h2 class="text-white text-center mt-4 font-weight-bold">1. Hoe vaak eet jij patat?</h2>
+                    <h2 class="text-white text-center my-4 font-weight-bold">1. Hoe vaak eet jij patat?</h2>
                     <div class="options text-center text-white">
-                        <a class="btn btn-outline-light">Vaak</a>
-                        <a class="btn btn-outline-light">Soms</a>
-                        <a class="btn btn-outline-light">Nooit</a> <br/>
-                        <a class="btn btn-outline-light nietzeggen mt-5">Wil ik liever niet zeggen</a>
+                        <input name="vorige" type="submit" value="Vaak" class="btn btn-outline-light py-3 px-5 m">
+                        <input name="vorige" type="submit" value="Soms" class="btn btn-outline-light py-3 px-5">
+                        <input name="vorige" type="submit" value="Nooit" class="btn btn-outline-light py-3 px-5">
+                        <input name="vorige" type="submit" value="Wil ik liever niet zeggen" class="btn btn-outline-light mt-5 p-5" style="display: flex; justify-content: center; align-items: center; margin: 0 auto;">
                     </div>
 
                     <div class="nextback options text-white text-center mt-4">
-                        <a class="btn btn-outline-light">Vorige vraag</a>
-                        <a class="btn btn-outline-light">Volgende vraag</a>
+                        <form action="{{ path('form', {id:id}) }}" method="post" class="surveycontrols">
+                            <input name="vorige" type="submit" value="Vorige" class="btn btn-outline-light">
+                            <input name="volgende" type="submit" value="Volgende" class="btn btn-outline-light">
+                        </form>
                     </div>
 
                     <div class="progressbar mb-5">

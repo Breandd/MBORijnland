@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 
 * {
-    font-family: 'Karla' !important;;
+    font-family: 'Karla';
 }
 
 .lead {
@@ -28,7 +28,7 @@
 .headerbutton {
     font-size: 20px;
     padding: 10px 30px;
-    background-color: #D9C900;
+    background-color: #FEED02;
     font-weight: bold;
     letter-spacing: 0.1em;
 }
@@ -68,6 +68,37 @@
 #navbar-brand {
     width: 200px;
     transition: 0.5s;
+}
+
+.subheading {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 37px;
+}
+
+.subtext {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19px;
+}
+
+.samenwerkingtitle {
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contactsection {
+  background-color: #383838;
+  color: white;
+}
+
+.contacttitle{
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
 }
 
 /*** Responsive Styles Standard Desktop +***/
