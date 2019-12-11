@@ -4,151 +4,50 @@
 
 {% block body %}
 
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
-
-        * {
-            font-family: 'Raleway';
-        }
-
-        body{
-            height: 100%;
-        }
-
-        .displayDesktop{
-            display: flex;
-        }
-
-        .displayMobile{
-            display: none;
-        }
-
-        .iconsMobile{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 50px 0px;
-        }
-
-        .addtext {
-            margin-bottom: 11%;
-        }
-
-        .partext {
-            font-size: 18px;
-        }
-
-        .options a {
-            border-radius: 0;
-            font-size: 24px;
-            padding: 13px 122px;
-            border: 4px solid white;
-            margin: 10px 4px;
-        }
-
-        .options .nietzeggen{
-            border-radius: 0;
-            font-size: 24px;
-            padding: 13px 343px;
-            border: 4px solid white;
-            margin: 10px 10px;
-        }
-
-        .options a:hover{
-            cursor: pointer;
-            color: black !important;
-        }
-
-        .nextback {
-            margin-bottom: 11%;
-        }
-
-        .nextback a:hover {
-            color: black;
-            border: 4px solid #F8EF22;
-            background: #F8EF22;
-        }
-        
-        @media only screen and (min-width: 1024px) and (max-width: 1440px){
-            .iconsDesktop img:first-child{ 
-                width: 100% !important;
-            }
-        }
-
-        @media all and (max-width: 768px){
-            .options a {
-                border-radius: 0;
-                font-size: 24px;
-                padding: 13px 20px;
-                border: 4px solid white;
-                margin: 10px 4px;
-            }
-
-            .options .nietzeggen{
-                border-radius: 0;
-                font-size: 24px;
-                padding: 13px 20px;
-                border: 4px solid white;
-                margin: 10px 10px;
-            }
-            
-            .displayDesktop{
-                display: none;
-            }
-
-            .displayMobile{
-                display: flex;
-            }
-
-            @media all and (max-width: 425px){
-                .iconsMobile{
-                    display: inline;
-                    justify-content: center;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    padding: 50px 0px;
-                }
-                .iconsMobile>img{
-                    padding: 20px 0px;
-                }
-            }
-
-            @media all and (min-width: 1024px){
-                .iconsDesktop>img{
-                    width: 150px !important;
-                }
-            }
-        }
-    </style>
-
-
+    <link href="{{ asset('css/surveystyles.css') }}" rel="stylesheet">
 
 
     <div class="container-fluid" style="height: 100%;">
         <div class="row displayMobile flex-wrap-reverse">
             <div class="col-12 col-lg-2">
                 <div class="iconsMobile">
-                    <img src="{{asset('images/logo.png')}}" alt="MBORijnland logo" class="logo d-block ml-auto mr-auto mt-4">
-                    <img src="{{asset('images/dutchinnovationfactorylogo.png')}}" alt="MBORijnland logo" class="logo d-block ml-auto mr-auto">
-                    <img src="{{asset('images/haagselogo.png')}}" alt="MBORijnland logo" class="logo d-block ml-auto mr-auto mb-4">
+                    <div class="d-flex my-4">
+                        <img class="d-block m-auto" width="150px" src="{{ asset('images/logo.png') }}" >
+                    </div>
+                    <div class="d-flex my-4">
+                        <img class="d-block m-auto " width="150px" src="{{ asset('images/haagselogo.png') }}" >
+                    </div>
+                    <div class="d-flex my-4">
+                        <img class="d-block m-auto" width="125px" src="{{ asset('images/dif_logo-format2.jpg') }}" >
+                    </div>
+                    <div class="d-flex my-4">
+                        <img class="d-block m-auto" width="125px" src="{{ asset('images/zoetermeer.png') }}" >
+                    </div>
+                    <div class="d-flex my-4">
+                        <img class="d-block m-auto" width="125px" src="{{ asset('images/denhaag.jpg') }}" >
+                    </div>
+                    <div class="d-flex my-4">
+                        <img class="d-block m-auto" width="125px" src="{{ asset('images/delft.png') }}" >
+                    </div>
                 </div>
             </div>
             <div class="col-lg-10" style="background-color: #221E1F;">
-                <p class="text-white text-center mt-4 font-weight-bold partext addtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit mattis leo a condimentum.</p>
+                <p class="text-white text-center m-4 font-weight-bold partext addtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit mattis leo a condimentum.</p>
 
                 <div class="question">
-                    <h2 class="text-white text-center mt-4 font-weight-bold">1. Hoe vaak eet jij patat?</h2>
+                    <h2 class="text-white text-center my-4 font-weight-bold">1. Hoe vaak eet jij patat?</h2>
                     <div class="options text-center text-white">
-                        <a class="btn btn-outline-light">Vaak</a>
-                        <a class="btn btn-outline-light">Soms</a>
-                        <a class="btn btn-outline-light">Nooit</a> <br/>
-                        <a class="btn btn-outline-light nietzeggen mt-5">Wil ik liever niet zeggen</a>
+                         <input name="vorige" type="submit" value="Vaak" class="btn btn-outline-light selectInput">
+                        <input name="vorige" type="submit" value="Soms" class="btn btn-outline-light selectInput">
+                        <input name="vorige" type="submit" value="Nooit" class="btn btn-outline-light selectInput">
+                        <input name="vorige" type="submit" value="Wil ik liever niet zeggen" class="btn btn-outline-light selectInput anonymous">
                     </div>
 
                     <div class="nextback options text-white text-center mt-4">
-                        <a class="btn btn-outline-light">Vorige vraag</a>
-                        <a class="btn btn-outline-light">Volgende vraag</a>
+                       <form action="{{ path('form', {id:id}) }}" method="post" class="surveycontrols">
+                            <input name="vorige" type="submit" value="Vorige" class="btn btn-outline-light">
+                            <input name="volgende" type="submit" value="Volgende" class="btn btn-outline-light volgende">
+                        </form>
                     </div>
 
                     <div class="progressbar mb-5">
@@ -165,44 +64,55 @@
 
 
         <div class="row displayDesktop">
-            <div class="col-12 col-lg-2" style="display: flex; justify-content: space-between; flex-direction: column; flex-wrap: wrap;">
-                <div class="iconsDesktop">
-                    <img src="{{asset('images/logo.png')}}" alt="MBORijnland logo" class="logo d-block ml-auto mr-auto mt-4">
+            <div class="col-12 col-lg-2 p-0" style="display: flex; flex-direction: column; flex-wrap: wrap;">
+                <div class="d-flex m-auto py-4 iconsDesktop">
+                    <img class="d-block m-auto" width="150px" src="{{ asset('images/logo.png') }}" >
                 </div>
-                <div class="iconsDesktop d-flex mb-4" style="justify-content: space-around">
-                    <div class="d-flex mt-auto">
-                        <img src="{{asset('images/dutchinnovationfactorylogo.png')}}" alt="MBORijnland logo" class="logo d-block ml-auto mr-auto">
-                    </div>
-
-                    <div>
-                        <img src="{{asset('images/haagselogo.png')}}" alt="MBORijnland logo" class="logo d-block ml-auto mr-auto">
-                    </div>
+                <div class="d-flex m-auto py-4 iconsDesktop">
+                    <img class="d-block m-auto " width="150px" src="{{ asset('images/haagselogo.png') }}" >
+                </div>
+                <div class="d-flex m-auto py-4 iconsDesktop">
+                    <img class="d-block m-auto" width="125px" src="{{ asset('images/dif_logo-format2.jpg') }}" >
+                </div>
+                <div class="d-flex m-auto py-4 iconsDesktop">
+                    <img class="d-block m-auto" width="125px" src="{{ asset('images/zoetermeer.png') }}" >
+                </div>
+                <div class="d-flex m-auto py-4 iconsDesktop">
+                    <img class="d-block m-auto" width="125px" src="{{ asset('images/denhaag.jpg') }}" >
+                </div>
+                <div class="d-flex m-auto py-4 iconsDesktop">
+                    <img class="d-block m-auto" width="125px" src="{{ asset('images/delft.png') }}" >
                 </div>
             </div>
             <div class="col-lg-10" style="background-color: #221E1F;">
                 <p class="text-white text-center mt-4 font-weight-bold partext addtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit mattis leo a condimentum.</p>
 
                 <div class="question">
-                    <h2 class="text-white text-center my-4 font-weight-bold">1. Hoe vaak eet jij patat?</h2>
+                    <h2 class="text-white text-center my-5 pb-5 font-weight-bold">1. Hoe vaak eet jij patat?</h2>
+
                     <div class="options text-center text-white">
-                        <input name="vorige" type="submit" value="Vaak" class="btn btn-outline-light py-3 px-5 m">
-                        <input name="vorige" type="submit" value="Soms" class="btn btn-outline-light py-3 px-5">
-                        <input name="vorige" type="submit" value="Nooit" class="btn btn-outline-light py-3 px-5">
-                        <input name="vorige" type="submit" value="Wil ik liever niet zeggen" class="btn btn-outline-light mt-5 p-5" style="display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+                        <input name="vorige" type="submit" value="Vaak" class="btn btn-outline-light py-3 px-5 selectInput">
+                        <input name="vorige" type="submit" value="Soms" class="btn btn-outline-light py-3 px-5 selectInput">
+                        <input name="vorige" type="submit" value="Nooit" class="btn btn-outline-light py-3 px-5 selectInput">
+                        <input name="vorige" type="submit" value="Wil ik liever niet zeggen" class="btn btn-outline-light mt-5 p-5 selectInput anonymous" style="display: flex; justify-content: center; align-items: center; margin: 0 auto;">
                     </div>
 
-                    <div class="nextback options text-white text-center mt-4">
+                    <div class="nextback options text-white text-center">
                         <form action="{{ path('form', {id:id}) }}" method="post" class="surveycontrols">
-                            <input name="vorige" type="submit" value="Vorige" class="btn btn-outline-light">
-                            <input name="volgende" type="submit" value="Volgende" class="btn btn-outline-light">
+                            <input id="vorige" name="vorige" type="submit" value="Vorige" class="btn btn-outline-light">
+                            <input id="volgende" name="volgende" type="submit" value="Volgende" class="btn btn-outline-light volgende">
                         </form>
                     </div>
 
                     <div class="progressbar mb-5">
                         <p class="text-center text-white partext">1 van de 10</p>
-    
                         <div class="progressback" style="height: 10px; background-color: #c4c4c4; width: 50%; margin-left: auto; margin-right: auto;">
-                            <div class="progressinner" style="height: 10px; width: 25px; background-color: #f8ef22;"></div>
+                        {% if question.id is defined %}
+                            {% set progress = question.id * 10 %}
+                        {% else %}
+                            {% set progress = 0 %}
+                        {% endif %}
+                            <div class="progressinner" style="height: 10px; width: {{ progress }}%; background-color: #f8ef22;"></div>
                         </div>
                     </div>
                     

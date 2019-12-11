@@ -129,6 +129,12 @@
   }
 }
 
+@media all and (max-width: 1100px) {
+  .samenwerkingtitle {
+    font-size: 30px;
+  }
+}
+
 
 
 #navbar-container {
@@ -145,4 +151,8 @@
 
 .btn-yellow:hover {
     color: #fff;
+}
+
+.aboutcontent {
+  background-color: #383838;
 }

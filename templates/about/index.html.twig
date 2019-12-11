@@ -3,18 +3,30 @@
 {% block title %}Hello AboutController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<link href="{{ asset('css/homestyles.css') }}" rel="stylesheet" />
+{% include 'components/header.html.twig' %}
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Miguel/Desktop/werkplaats/src/Controller/AboutController.php'|file_link(0) }}">src/Controller/AboutController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Miguel/Desktop/werkplaats/templates/about/index.html.twig'|file_link(0) }}">templates/about/index.html.twig</a></code></li>
-    </ul>
+<div class="container-fluid py-5 aboutsection">
+        <div class="row">
+            <div class="col-6 aboutcontent">
+                <p>
+                    ontwikkeling gaan klanten andere eisen stellen. Digitalisering biedt grote kansen voor ondernemers en kan helpen om beter in te spelen op de veranderende klantvraag: denk aan het efficiënter maken van bedrijfsprocessen; meer klanten bereiken via online sales en marketing en beter weten wat je klanten willen door data te gebruiken.
+
+                    Voor veel ondernemers is het echter een grote stap om die kansen te benutten. Gebrek aan tijd, kennis en geld spelen hierbij een rol. Dure ICT-specialisten inschakelen of het eigen personeel bijscholen is geen optie. De MKB Digiwerkplaats wil hier iets aan doen. Bij de werkplaats kunnen ondernemers terecht voor praktische ondersteuning en advies in hun bedrijf. Professional is opleiding gaan samen met ondernemers aan de slag.
+
+                    Wie? Door studenten van MBO Rijnland en de Haagse Hogeschool.
+                    Waar? In de regio Zoetermeer vanuit de Dutch Innovation Factory. In Den Haag gaan studenten op locatie aan de slag met ondernemers. Bijvoorbeeld in de pop-up werkplaats op bedrijventerrein Zichtenburg, Kerketuinen Dekkershoek.
+
+                    Initiatiefnemers en financiering
+                    MBO Rijnland, Haagse Hogeschool, gemeente Zoetermeer
+                </p>
+            </div>
+            
+            <div class="col-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9815.319619785474!2d4.5148634!3d52.0464108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x13e973bd0ecd70c!2sDutch%20Innovation%20Factory!5e0!3m2!1snl!2snl!4v1576072261581!5m2!1snl!2snl" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
 </div>
+
 {% endblock %}

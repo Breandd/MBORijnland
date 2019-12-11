@@ -1,110 +1,218 @@
-
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 
-* {
-font-family: 'Raleway';
-}
+        * {
+            font-family: 'Raleway';
+        }
 
-body{
-height: 100%;
-}
+        body{
+            height: 100%;
+        }
 
-.displayDesktop{
-display: flex;
-}
+        .displayDesktop{
+            display: flex;
+        }
 
-.displayMobile{
-display: none;
-}
+        .displayDesktop>div{
+            min-height: 100vh;
+        }
 
-.iconsMobile{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 50px 0px;
-}
+        .displayMobile{
+            display: none;
+        }
 
-.addtext {
-margin-bottom: 11%;
-}
+        .iconsMobile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0px;
+        }
 
-.partext {
-font-size: 18px;
-}
+        .addtext {
+            margin-bottom: 1.5rem;
+        }
 
-.options a {
-border-radius: 0;
-font-size: 24px;
-padding: 13px 122px;
-border: 4px solid white;
-margin: 10px 4px;
-}
+        .partext {
+            font-size: 18px;
+        }
 
-.options .nietzeggen{
-border-radius: 0;
-font-size: 24px;
-padding: 13px 343px;
-border: 4px solid white;
-margin: 10px 10px;
-}
+        .options{
+            width: 75%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
 
-.options a:hover{
-cursor: pointer;
-color: black !important;
-}
+        .selectInput{
+            width: 30%;
+            margin: 0 1.5% !important;
+            border-radius: 0 !important;
+            white-space: inherit;
+        }
 
-.nextback {
-margin-bottom: 11%;
-}
+        .options .nietzeggen{
+            border-radius: 0;
+            font-size: 24px;
+            padding: 13px 343px;
+            border: 4px solid white;
+            margin: 10px 10px;
+        }
 
-.nextback a:hover {
-color: black;
-border: 4px solid #F8EF22;
-background: #F8EF22;
-}
+        .nextback {
+            margin-bottom: 5%;
+            display: flex;
+            justify-content: center;
+        }
 
-@media all and (max-width: 768px){
-.options a {
-border-radius: 0;
-font-size: 24px;
-padding: 13px 20px;
-border: 4px solid white;
-margin: 10px 4px;
-}
+        .nextback a:hover {
+            color: black;
+            border: 4px solid #F8EF22;
+            background: #F8EF22;
+        }
 
-.options .nietzeggen{
-border-radius: 0;
-font-size: 24px;
-padding: 13px 20px;
-border: 4px solid white;
-margin: 10px 10px;
-}
+        .surveycontrols{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
 
-.displayDesktop{
-display: none;
-}
+        .surveycontrols>input{
+            width: 40%;
+            padding: 20px;
+            margin: 0 1.25% !important;
+            border-radius: 0 !important;
+        }
 
-.displayMobile{
-display: flex;
-}
+        .surveycontrols>input, .selectInput{
+            font-weight: bold;
+            font-size: 24px;
+            border: 5px solid;
+        }
 
-@media all and (max-width: 425px){
-.iconsMobile{
-display: inline;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-padding: 50px 0px;
-}
-.iconsMobile>img{
-padding: 20px 0px;
-}
-}
+        .volgende{
+            background-color: #F8EF22;
+            border: 5px solid #F8EF22 !important;
+            color: black;
+        }
 
-@media all and (min-width: 1024px){
-.iconsDesktop>img{
-width: 150px;
-}
-}
-}
+        .volgende:hover{
+            background-color: black;
+            border: 5px solid white !important;
+            color: white;
+        }
+
+        .anonymous{
+            width: 100%;
+            margin: 50px 1.5% !important;
+        }
+
+        @media all and (max-width: 425px){
+            .iconsMobile{
+                display: inline;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 50px 0px;
+                width: 100%;
+            }
+            .iconsMobile img{
+                padding: 20px 0px;
+            }
+            
+            .selectInput{
+                width: 100%;
+                margin: 10px 0 !important;
+            }
+            
+            .surveycontrols{
+                display: block;
+            }
+
+            .surveycontrols>input{
+                width: 100%;
+                margin: 10px 0 !important;
+            }
+
+            .surveycontrols>input, .selectInput{
+                border: 2px solid;
+                font-size: 18px;
+            }
+
+            .progressback{
+                width: 75% !important;
+            }
+        }
+
+        @media all and (min-width: 426px) and (max-width: 768px){
+            .iconsMobile{
+                flex-wrap: wrap !important;
+                display: flex;
+            }
+            .iconsMobile>div{
+                width: 50%;
+                padding: 0 15%;
+            }
+            .iconsMobile img{
+                width: 100%;
+            }
+            .surveycontrols>input, .selectInput{
+                border: 2px solid;
+                font-size: 16px;
+            }
+        }
+
+
+        @media all and (max-width: 768px){
+            .options a {
+                border-radius: 0;
+                font-size: 24px;
+                padding: 13px 20px;
+                border: 4px solid white;
+                margin: 10px 4px;
+            }
+
+            .options .nietzeggen{
+                border-radius: 0;
+                font-size: 24px;
+                padding: 13px 20px;
+                border: 4px solid white;
+                margin: 10px 10px;
+            }
+            
+            .displayDesktop{
+                display: none;
+            }
+
+            .displayMobile{
+                display: flex;
+            }
+
+            .iconsDesktop{
+                width: 100% !important;
+            }
+        }
+
+        @media all and (min-width: 769px) and (max-width: 1024px){
+            .displayDesktop{
+                display: flex;
+                flex-wrap: wrap-reverse;
+            }
+        }
+       
+        @media all and (min-width: 768px){
+            .question{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: row;
+                height: 90vh;
+                min-height: 768px;
+                margin-bottom: 5%;
+            }
+
+            .question>div, .question>h2{
+                width: 80%;
+            }
+        }

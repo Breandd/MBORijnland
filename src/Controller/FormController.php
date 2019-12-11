@@ -24,6 +24,7 @@ class FormController extends AbstractController
         return $this->render('survey/fillsurvey.html.twig', [
             'controller_name' => 'FormController',
             'id' => $id,
+            'question' => $questions,
         ]);
     }
 }
