@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80918321-d0de-49b9-845f-c94df831e8db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env copy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Werkplaats-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Werkplaats-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/form/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FormController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/survey/fillsurvey.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/survey/fillsurvey.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/var/log/dev.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,6 +139,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
       <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
     </include_path>
   </component>
   <component name="ProjectId" id="1UTaahz2Tn60h0psb6b5qO0ks7u" />
@@ -189,6 +191,7 @@
       <workItem from="1575884857305" duration="732000" />
       <workItem from="1575964342496" duration="356000" />
       <workItem from="1575968374722" duration="297000" />
+      <workItem from="1576140326706" duration="134000" />
     </task>
     <servers />
   </component>
