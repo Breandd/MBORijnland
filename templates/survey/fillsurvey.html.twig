@@ -3,7 +3,7 @@
 {% block title %}Hello FormController!{% endblock %}
 
 {% block body %}
-
+    {% set Value = "" %}
     <link href="{{ asset('css/surveystyles.css') }}" rel="stylesheet">
 
 
@@ -49,7 +49,7 @@
                             <input name="volgende" type="submit" value="Volgende" class="btn btn-outline-light volgende">
                         </form>
                     </div>
-
+ss
                     <div class="progressbar mb-5">
                         <p class="text-center text-white partext">1 van de 10</p>
     
@@ -88,7 +88,9 @@
                 <p class="text-white text-center mt-4 font-weight-bold partext addtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit mattis leo a condimentum.</p>
 
                 <div class="question">
-                    <h2 class="text-white text-center my-5 pb-5 font-weight-bold">1. Hoe vaak eet jij patat?</h2>
+                    
+                    <h2 class="text-white text-center my-5 pb-5 font-weight-bold">{{ id }}. {% if question.description is defined %}{{ question.description }}{% else %} Dit is een vraag {% endif %}</h2>
+
 
                     <div class="options text-center text-white">
                         <input name="vorige" type="submit" value="Vaak" class="btn btn-outline-light py-3 px-5 selectInput">
@@ -98,20 +100,22 @@
                     </div>
 
                     <div class="nextback options text-white text-center">
-                        <form action="{{ path('form', {id:id}) }}" method="post" class="surveycontrols">
+                        <!-- <form action="{{ path('form', {id:id}) }}" method="post" class="surveycontrols">
                             <input id="vorige" name="vorige" type="submit" value="Vorige" class="btn btn-outline-light">
                             <input id="volgende" name="volgende" type="submit" value="Volgende" class="btn btn-outline-light volgende">
-                        </form>
+                        </form> -->
+                        <div class="surveycontrols">
+                            {% if id > 1 %}
+                                <a href="{{ path('form', {id: id - 1 }) }}" class="btn btn-outline-light">Vorige</a>
+                            {% endif %}
+                                <a href="{{ path('form', {id: id + 1 }) }}" class="btn btn-outline-light">Volgende</a>
+                        </div>
                     </div>
 
                     <div class="progressbar mb-5">
-                        <p class="text-center text-white partext">1 van de 10</p>
+                        <p class="text-center text-white partext">{{ id }} van de {{ length }}</p>
                         <div class="progressback" style="height: 10px; background-color: #c4c4c4; width: 50%; margin-left: auto; margin-right: auto;">
-                        {% if question.id is defined %}
-                            {% set progress = question.id * 10 %}
-                        {% else %}
-                            {% set progress = 0 %}
-                        {% endif %}
+                            {% set progress = 100 / length * id %}
                             <div class="progressinner" style="height: 10px; width: {{ progress }}%; background-color: #f8ef22;"></div>
                         </div>
                     </div>
@@ -121,4 +125,26 @@
         </div>
     </div>
 
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        const inputs = document.getElementsByClassName('selectInput')
+        let active
+
+        for (let x = 0; x < inputs.length; x++) {
+            const input = inputs[x]
+            
+            input.addEventListener('click', (e) => {
+                
+                if (active) {
+                    active.classList.toggle('active')
+                }
+
+                active = e.target
+                e.target.classList.toggle('active')
+            })
+        }
+
+    </script>
 {% endblock %}

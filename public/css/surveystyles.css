@@ -51,6 +51,12 @@
             white-space: inherit;
         }
 
+        .selectInput .active{
+            color: #212529;
+            background-color: #f8f9fa;
+            border-color: #f8f9fa;
+        }
+
         .options .nietzeggen{
             border-radius: 0;
             font-size: 24px;
@@ -77,14 +83,14 @@
             justify-content: space-evenly;
         }
 
-        .surveycontrols>input{
+        .surveycontrols>a{
             width: 40%;
             padding: 20px;
             margin: 0 1.25% !important;
             border-radius: 0 !important;
         }
 
-        .surveycontrols>input, .selectInput{
+        .surveycontrols>a, .selectInput{
             font-weight: bold;
             font-size: 24px;
             border: 5px solid;
@@ -129,12 +135,12 @@
                 display: block;
             }
 
-            .surveycontrols>input{
+            .surveycontrols>a{
                 width: 100%;
                 margin: 10px 0 !important;
             }
 
-            .surveycontrols>input, .selectInput{
+            .surveycontrols>a, .selectInput{
                 border: 2px solid;
                 font-size: 18px;
             }
@@ -156,7 +162,7 @@
             .iconsMobile img{
                 width: 100%;
             }
-            .surveycontrols>input, .selectInput{
+            .surveycontrols>a, .selectInput{
                 border: 2px solid;
                 font-size: 16px;
             }
