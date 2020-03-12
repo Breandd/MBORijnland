@@ -1,0 +1,192 @@
+html{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/Background.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    overflow-x: hidden;
+}
+/* header */
+h1{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-family: raleway;
+}
+
+h5{
+    font-family: raleway;
+    font-size: 13px;
+}
+
+#headerbox{
+    background: rgb(245, 197, 44);
+    margin-bottom: 10px;
+    font-family: raleway-thin;
+    z-index:99;
+    font-size: 30px;
+}
+
+#headerbox table{
+    width: 100%;
+}
+
+.titlecell{
+    text-align: center;
+}
+
+.flag{
+    height: 30px;
+    width: 45px
+}
+
+.flagcell{
+    text-align: center;
+    width: 5%
+}
+
+/* logo */
+.logo{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logocell{
+    text-align: center;
+    width:10%;
+    min-width:200px;
+}
+
+#hier{
+    text-decoration: underline;
+    color: blue;
+}
+
+/* navigation */
+
+nav{
+    float:left;
+    left: 40px;
+    font-family: raleway;
+    font-size: 20pt;
+    width:10%;
+    min-width:200px;
+}
+.expandbox{
+    width: 0;
+    height: 40px;
+    background: rgb(247, 183, 49);
+    -webkit-transition: width 500ms;
+    transition: width 500ms;
+}
+.expandbox:hover{
+    width:100%;
+}
+
+/* content */
+#contentbox{
+    text-align: left;
+    margin-left: 210px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    overflow:hidden;
+    height: 200px;
+}
+
+.bannerimage{
+    display:none;
+    width:75%;
+    height: 100%;
+}
+
+h2 {
+    font-family: raleway-thin;
+    position: absolute; 
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    margin-left: 25px;
+    color: white;  
+    letter-spacing: 2px;
+    font-size: 40pt;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+a{
+    font-family: raleway;
+    text-decoration: none;
+    width: 55%;
+}
+
+h3{
+    font-family: raleway;
+    position: relative;
+    bottom: 40px;
+    left: 40px;
+}
+
+strong{
+    font-family: raleway;
+}
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+/* Content */
+p{
+    font-family: raleway;
+    font-size: 110%;
+    width: 75%;
+}
+
+#sponsortable tr td{
+    padding-top: 10px;
+}
+
+.sponsorlogo{
+    width:100px;
+    height:100px;
+    float: left;
+    clear: left;
+}
+/* fonts */
+@font-face{
+    font-family: raleway;
+    src: url(fonts/raleway.ttf);
+}
+
+@font-face{
+    font-family: raleway-thin;
+    src: url(fonts/thin.ttf);
+}
+
+@font-face{
+    font-family: raleway-black;
+    src: url(fonts/Black.ttf);
+}
+

@@ -1,0 +1,26 @@
+html{
+    overflow-x: hidden;
+}
+
+.images{
+    border: solid 2px black;
+    border-radius: 5%;
+}
+
+.images:hover{
+    opacity: 0.7;
+}
+
+#back{
+    position: relative;
+    right: 180px;
+    bottom: 250px;
+}
+
+#folders{
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: raleway;
+}

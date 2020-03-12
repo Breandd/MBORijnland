@@ -1,0 +1,177 @@
+html{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/Background.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    overflow-y: scroll;
+}
+/* header */
+h1{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-family: raleway;
+
+}
+
+#headerbox{
+    background: rgb(245, 197, 44);
+    margin-bottom: 10px;
+    font-family: raleway-thin;
+    z-index:99;
+    font-size: 30px;
+}
+
+#headerbox table{
+    width:100%;
+}
+
+.titlecell{
+    text-align: center;
+}
+
+.flag{
+    height: 30px;
+}
+
+.flagcell{
+    text-align: center;
+    width: 5%
+}
+
+/* logo */
+.logo{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logocell{
+    text-align: center;
+    width:10%;
+    min-width:200px;
+    min-width:200px;
+}
+
+/* navigation */
+
+nav{
+    float:left;
+    left: 40px;
+    font-family: raleway, sans-serif;
+    font-size: 20pt;
+    width:10%;
+    min-width:200px;
+}
+.expandbox{
+    width: 0px;
+    height: 40px;
+    background: rgb(247, 183, 49);
+    -webkit-transition: width 500ms;
+    transition: width 500ms;
+}
+.expandbox:hover{
+    width:100%;
+}
+
+/* content */
+#contentbox{
+    text-align: left;
+    display: block;
+    margin-left: 210px;
+}
+
+.banner{
+    position: relative;
+    width:100%;
+    overflow:hidden;
+
+}
+
+.bannerimage{
+    display:none;
+    width:75%;
+    height: 200px;
+    vertical-align: center;
+}
+
+h2 {
+    font-family: raleway-thin, sans-serif;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    margin-left: 25px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 40pt;
+    background-color: rgba(0,0,0,0.5);
+}
+
+h3 {
+    font-family: raleway-black, sans-serif;
+}
+
+a{
+    font-family: raleway, sans-serif;
+    text-decoration: none;
+    display: inline
+}
+
+p{
+    font-family: raleway, sans-serif;
+    text-decoration: none;
+    display: inline
+}
+
+
+
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+/* fonts */
+@font-face{
+    font-family: raleway;
+    src: url(fonts/raleway.ttf);
+}
+
+@font-face{
+    font-family: raleway-thin;
+    src: url(fonts/thin.ttf);
+}
+
+@font-face{
+    font-family: raleway-black;
+    src: url(fonts/Black.ttf);
+}
+
+/* Maps */
+#Map {
+    height: 400px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
