@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Oefen en toets tafels!</title>
+    <link rel="stylesheet" href="css/oefenen.css">
+</head>
+<body>
+<div id="center">
+    <div id="nav"><!-- start header/ nav -->
+        <nav>
+            <a class="link" href="Tafels%20oefenen.html">Tafels oefenen</a>
+            <a class="link" href="tafels_toetsen.html">Tafels toetsen</a>
+            <a class="link" href="print_pagina.html">Download het oefenblaadje</a>
+        </nav>
+    </div><!-- end header / nav -->
+    <h2>Welke tafel wil je toetsen?</h2>
+    <div id="content"><!-- start knoppen -->
+        <button class="button" onclick="tafelstoetsen(1)">1</button>
+        <button class="button" onclick="tafelstoetsen(2)">2</button>
+        <button class="button" onclick="tafelstoetsen(3)">3</button>
+        <button class="button" onclick="tafelstoetsen(4)">4</button>
+        <button class="button" onclick="tafelstoetsen(5)">5</button>
+        <button class="button" onclick="tafelstoetsen(6)">6</button>
+        <button class="button" onclick="tafelstoetsen(7)">7</button>
+        <button class="button" onclick="tafelstoetsen(8)">8</button>
+        <button class="button" onclick="tafelstoetsen(9)">9</button>
+        <button class="button" onclick="tafelstoetsen(10)">10</button>
+
+        </div><!-- end knoppen -->
+    </div>
+
+    <div id="tafels">
+    </div>
+<!-- hier in kompt de controlleer knop -->
+<div id="input"></div>
+<!-- end -->
+<!-- Hier komenn de score's te staan -->
+<div id="score"></div>
+<!-- end -->
+
+<!-- javascript voor het vertonen en het toetsen van de tafels -->
+<script src="JavaScript/tafels.js"></script>
+</body>
+</html>
