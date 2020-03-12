@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room - Create</title>
+</head>
+<body>
+
+<a href="index.php">Home</a>
+<form action="create.php" method="post" name="roomform">
+    <table width="25%" border="0">
+        <tr>
+            <td>ID</td>
+            <td><input type="number" name="id"></td>
+        </tr>
+        <tr>
+            <td>Room number</td>
+            <td><input type="number" name="knum"></td>
+        </tr>
+        <tr>
+            <td>Category code</td>
+            <td><input type="text" name="catcode"></td>
+        </tr>
+        <tr>
+        <td width="100%"><span style="color: red;">Room availability is defined by 1 and 0. 1 = occupied and 0 = available</span></td>
+        </tr>
+        <tr>
+            <td>Room availability</td>
+            <td><input type="number" name="rava"> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="submit"> </td>
+        </tr>
+    </table>
+
+</form>
+
+
+</body>
+</html>

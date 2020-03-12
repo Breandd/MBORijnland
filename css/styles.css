@@ -1,0 +1,207 @@
+/* general styles */
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: gainsboro;
+}
+
+#headerlogo {
+     margin-top: 1%;
+     margin-left: 1%;
+ }
+
+.nav {
+    float: right;
+    margin-top: 1.5%;
+    margin-right: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.3vh;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container{
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: gainsboro;
+}
+
+/* end general styles */
+
+/* index styles */
+
+#logo {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.bgimg-1 {
+    background: url("../images/background.jpg") center no-repeat;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+}
+
+.caption button.border {
+    background-color: gainsboro;
+    color: black;
+    border: none;
+    padding: 18px;
+    font-size: 20px;
+}
+
+.bookbutton{
+    border: none;
+    margin: auto;
+    display: block;
+    background-color: gainsboro;
+    font-size: 2.5vh;
+}
+
+.bookbutton:hover{
+    background-color: rgba(173,216,230 ,0.7);
+}
+
+/* end index styles */
+
+/* start Booking styles */
+
+/* end booking styles */
+
+/* start gallery styles */
+
+.sidenav {
+    height: 100%;
+    width: 160px; /* Set the width of the sidebar */
+    z-index: 1; /* Stay on top */
+    background-color: gainsboro; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    float: left;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0 10px;
+}
+
+.mySlides{
+    display: none;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+#lobby{
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+}
+
+
+/* end gallery styles */
+
+/* start contact styles */
+
+#map{
+    float: right;
+    height: 100%;
+    width: 65%;
+}
+
+#contact{
+    float: left;
+    margin-left: 5%;
+}
+
+ul{
+    list-style: none;
+}
+
+input{
+    background-color: gainsboro;
+    border: none;
+    border-radius: 5%;
+    font-size: 1.7vh;
+}
+
+textarea{
+    background-color: gainsboro;
+    border: none;
+    width: 100%;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* end contact styles */
